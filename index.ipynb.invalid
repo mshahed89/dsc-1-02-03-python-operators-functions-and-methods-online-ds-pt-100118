@@ -1,0 +1,78 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Built-in Python Operators, Functions and Methods"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Introduction\n",
+    "\n",
+    "As a data scientist you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the langage that will allow you to perform common tasks more quickly and easily."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Objectives\n",
+    "You will be able to:\n",
+    "* Use base Python methods like `.append()`, `.upper()` and `.capitalize()`\n",
+    "* Understand (simply) and explain what built in Python methods are\n",
+    "* Understand, explain and use some base Python functions like `len()`, `type()`, `sum()`, `max()` and `min()`\n",
+    "* Understand and explain what functions are and why they’re useful\n",
+    "* Understand, explain and use Python comparison, logical, and identity operators"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Introducing \"Objects\"\n",
+    "\n",
+    "Later in the course we're going to spend a good amount of time on introducing and giving you hands on practice in \"Object Oriented Programming\" (OOP). But for now, to understand how some of the features in Python work, we're going to have to provide you with a brief introduction to some basic concepts. \n",
+    "\n",
+    "A function is a piece of reusable code. If you often want to capitalize a word, you might write (or use, if someone else has written) a \"function\" called `capitalize()` that will take a string and make it all upper case.\n",
+    "\n",
+    "An object is a collection of data and functions. It turns out that for many types of programming, putting your functions and data together into \"objects\" is a really useful way to organize all of your code to make it easy to keep track of.\n",
+    "\n",
+    "If a function is part of an object we call it a method.\n",
+    "\n",
+    "Python has a number of built in functions and various objects in Python have built in methods.\n",
+    "\n",
+    "Really understanding objects, functions and methods will probably take a while, and it's something we'll come back to a number of times, but for now, here are the three things you need to know:\n",
+    "* Python comes with a range of built in pieces of code to perform common tasks\n",
+    "* Some of them you use by writing their name first - e.g. `type(\"hello\")` - those are called functions\n",
+    "* Others require you to take an object and \"call a method on the object\" e.g. `my_name.capitalize()` - they are methods\n",
+    "\n",
+    "Don't worry if it's a bit confusion for now, we'll come back to this repeatedly until it's second nature!\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Python Methods\n",
+    "\n",
+    "Most higher-level languages like Python have types like strings or lists that actually come built-in with some really great functionality, which we call methods. Methods are, essentially, functions that are attached or **bound to an object**. Now that sentence might not make complete sense, so, let's unpack it. \n",
+    "\n",
+    "We have seen some methods and functions already. For example, we have seen and used the `type()` function and the `.title()` method. The key difference is that the `.title()` method has always been bound to a string. The `type()` function, however, is not called on a string or any data type. \n",
+    "\n",
+    "```python\n",
+    "\"hello, i am a string.\".title() # \"Hello, I Am A String.\"\n",
+    "\n",
+    "type(\"hello, i am a string.\") # str\n",
+    "```\n",
+    "To illustrate even more clearly, try running the next cell. We will find that Python doesn't know what `title()` is when it is not attached to a string. This is because it is a **method** that is **bound** to the string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs":
